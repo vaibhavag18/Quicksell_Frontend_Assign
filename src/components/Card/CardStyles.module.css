@@ -1,0 +1,78 @@
+/* src/components/Layout/Card/CardStyles.module.css */
+.cardContainer {
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-shadow: 0 0 8px rgba(18, 18, 18, 0.13);
+    background-color: #ffffff;
+}
+
+.ticketId {
+    color: #6b6f76;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+.ticketTitle {
+    color: #282a2f;
+    font-size: 0.75rem;
+    font-weight: 550;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #edeff2;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.tagIcon {
+    background-color: #bec2c8;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
+
+.tagText {
+    color: #6b6f76;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.moreIcon {
+    display: grid;
+    place-items: center;
+    border: 1px solid #edeff2;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+@media screen and (max-width: 700px) {
+    .cardContainer {
+        min-width: fit-content;
+    }
+}
